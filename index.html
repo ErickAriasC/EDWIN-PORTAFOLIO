@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTAFOLIO</title>
+</head>
+<body>
+    <video id="videoFondo" loop autoplay muted><source src="content/videos/fondo.mp4" type="video/mp4" ></video>
+    <header class="header-cv" id="header-cv">
+        <div class="container-navbar" id="container-navbar">
+            <h2 class="logo" id="logo">PORTAFOLIO</h2>
+            <ul class="navbar" id="navbar">
+                <li><a href="">HOME</a> </li>
+                <li><a href="">ABOUT ME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PORTAFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="my-content" id="my-content">
+            <!-- presentacion y descripcioin -->
+            <section class="present" id="present">
+                <h3 class="greeting" id="greeting">Hello! This is my Portfolio</h3>
+                <h1 class="my-name" id="my-name">ERICK ARIAS CARDONA</h1>
+                <div class="animation">
+                    <h2 class="profession" id="profession">I'm a</h2>
+                    <ul class="animation-01">
+                        <li><b>Full Stack</b> </li>
+                        <li><b>Developer</b></li>
+                        <li><b>Full Stack</b> </li>
+                    </ul>
+                </div>
+                <p class="description" id="description">Lover of web and mobile development. I carry out my work with great commitment and dedication in order to satisfy the needs of each of the clients.</p>
+                <nav class="nav-social-red">
+                    <ul class="social-red" id="social-red">
+                        <li id="discord-red"><a  href="https://discord.com/channels/_erickarias"></a></li>
+                        <li id="git-red"><a href="https://github.com/ErickAriasC" ></a></li>
+                        <button class="dowland-cv" id="dowland-cv"><span class="dowland-cv-span">Dowland CV</span></button>
+                    </ul>
+                </nav>
+            </section>   
+            <!--foto perfil-->
+            <section class="photo" id="photo">
+                <img src="content/imagen/photo.profile.png" alt="my-photo" class="my-photo" id="my-photo">
+            </section>
+        </div>
+    </header>
+    <main class="main-home">
+        <section class="projects">
+            <div class="my-projects">
+                <h2 class="part-1">MY</h2>
+                <h2 class="part-2">PROJECTS</h2>
+            </div>  
+            <div class="cards">
+                <div class="container-card">
+                    <img src="content/imagen/main/p-p-t.png" alt="">
+                    <h2 class="name-1">ROCK, PAPER, SCISSORS</h2>
+                    <p class="content-1">Here each player chooses one of the three elements: rock, paper or scissors. The stone crushes the scissors, the scissors cut the paper, and the paper wraps the stone. The objective is to choose the element that defeats your opponent's and win the game.</p>
+                    <a href="">PLAY NOW</a>
+                </div>
+                <div class="container-card">
+                    <img src="content/imagen/main/21.png" alt="">
+                    <h2 class="name-2">GAME 21</h2>
+                    <p class="content-2">The objective here is to obtain a hand of cards whose total value is as close to 21 as possible without going over. if the sum of the cards exceeds 21, the player automatically loses.</p>
+                    <a href="">PLAY NOW</a>
+                </div>
+                <div class="container-card">
+                    <img src="content/imagen/main/copa.png" alt="">
+                    <h2 class="name-3">FOOTBALL CHAMPIONSHIP</h2>
+                    <p class="content-3">Here you can see the positions of the teams according to the dates entered and it tells us the first, second and third place in the championship.</p>
+                    <a href="">PLAY NOW</a>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="my-services">
+                <h2 class="part-1">OUR</h2>
+                <h2 class="part-2">SERVICES</h2>
+            </div>       
+            <!-- <div class="cards-services">
+                <div class="container-card-services">
+                    <img src="content/imagen/main/developer.png" alt="">
+                    <h2>DEVELOPER</h2>
+                    <p class="description">The objective here is to obtain a hand of cards whose total value is as close to 21 as possible without going over. if the sum of the cards exceeds 21, the player automatically loses.</p>
+                    <a class="services-btn-developer" href="">Ver más</a>
+                </div>
+                <div class="container-card-services">
+                    <img src="content/imagen/main/desing.png" alt="">
+                    <h2>DESIGNER</h2>
+                    <p class="description">The objective here is to obtain a hand of cards whose total value is as close to 21 as possible without going over. if the sum of the cards exceeds 21, the player automatically loses.</p>
+                    <a class="services-btn-designer" href="">Ver más</a>
+                </div>
+            </div> -->
+        </section>
+        <section class="contact-me">
+            <div class="contact">
+                <h2 class="part-1">CONTACT</h2>
+                <h2 class="part-2">ME</h2>
+            </div>
+            <div class="form">
+                <div class="input-1">
+                    <input type="text" class="full-name" placeholder="Full Name">
+                    <input type="text" class="email-address"  placeholder="Email Address">
+                    <input type="number" class="number-cel" placeholder="Cell phone number">
+                    <input type="text" class="email-subject" placeholder="Email Subject">
+                </div>
+                <div class="message">
+                    <textarea cols="30" class="message-user" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <button class="send-message">Send Message</button>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">  
+             <div class="container-footer">
+                 <h2 class="author">Hecho en 2023/ Erick Arias</h2>
+             </div>
+             <a href="">
+                 <img src="content/imagen/iconos/up-arrow.png" alt="">
+             </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
