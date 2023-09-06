@@ -110,9 +110,10 @@ li {
 
 
 .my-content {
-margin-top: 4rem;  /* padding-top: 3%; */
+  width: 100%;
+  margin-top: 15rem;  /* padding-top: 3%; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   font-size: 2rem;
 
 }
@@ -120,12 +121,11 @@ margin-top: 4rem;  /* padding-top: 3%; */
 .present,
 .photo {
   width: 50%;
-
 }
 
 .present {
-  margin-left: 8rem;
-  margin-top: 8rem;
+  width: 100%;
+  padding: 8rem 8rem 0rem 8rem;
 }
 
 
@@ -141,16 +141,27 @@ margin-top: 4rem;  /* padding-top: 3%; */
   color: #087ea8;
 }
 
-.social-red,
-.dowland-cv {
-  margin: 4%;
-  display: flex;
-}
-
-.social-red>li {
+.social-red>div>li {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0.5rem;
+}
+
+.social-red{
+  margin: 1rem;
+  display: flex;
+
+}
+
+.options-red{
+  display: flex;
+}
+
+img.logos {
+
+  width: 3rem;
+  height: 3rem;
+
 }
 
 #discord-red {
@@ -171,16 +182,18 @@ margin-top: 4rem;  /* padding-top: 3%; */
 
 .photo {
   /* //agregar el responsive desing a toda la pagina */
+  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 5rem;
 }
 
-img.logos {
-
-  width: 3rem;
-  height: 3rem;
-
+.my-photo {
+  width: 24rem;
+  height: 24rem;
+  animation: animationPhoto 2.5s infinite;
+  border: 0.3rem solid #c3c9c9;
+  border-radius: 50%;
+  filter: drop-shadow(0rem 0rem 1.8rem #c3c9c9);
 }
 
 @keyframes animationPhoto {
@@ -198,38 +211,13 @@ img.logos {
 }
 
 
-/* desde universe */
-.my-photo {
-
-  position: relative;
-  width: 26rem;
-  height: 26rem;
-  animation: animationPhoto 2.5s infinite;
-  border: 0.3rem solid #c3c9c9;
-  border-radius: 50%;
-  filter: drop-shadow(0rem 0rem 1.8rem #c3c9c9);
-
-}
-
-.my-photo::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  transition: 0.3s ease;
-  height: 98%;
-  width: 98%;
-  top: 1%;
-  left: 1%;
-  border-radius: 1.75rem;
-}
-
 /* ANIMACION BOTON DOWLAND CV  */
 .dowland-cv {
+  margin-left: 1rem;
   cursor: pointer;
   border: none;
   padding: 0.75rem;
   position: relative;
-  top: -1.8rem;
   display: inline-block;
   font-weight: 700;
   font-size: 1rem;
@@ -273,6 +261,7 @@ img.logos {
 }
 
 .animation {
+  width: auto;
   height: 2.5rem;
   display: flex;
   font-size: 1.25rem;
@@ -342,8 +331,7 @@ p {
 
 .main-home {
   width: 100%;
-  height: 60%;
-  display: flex;
+  height: auto;  display: flex;
   flex-direction: column;
 }
 
@@ -417,7 +405,7 @@ p {
 }
 
 .services {
-  margin: 10rem;
+  margin: 16rem;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -587,6 +575,10 @@ textarea {
     width: auto;
   }
 
+  .logo{
+    padding: 0.5rem;
+  }
+
   .menu {
     width: 100%;
     max-height: 0;
@@ -599,7 +591,6 @@ textarea {
     padding: 20px;
   }
 
-
   .navbar label{
     display: inline-flex;
     align-items: center;
@@ -611,25 +602,43 @@ textarea {
   }
 
   .my-content{
+    width: auto;
+    height: auto;
     font-size: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* align-items: center;   */
     margin: 0rem;
     padding: 0rem;
   }
-
+  
   .present{
-    margin-top: 5rem;
-    margin-left: 2rem;
+    width: 90%;
+    padding: 0rem 5% 0rem 5%;
+    /* margin-top: 5rem;
+    margin-left: 2rem; */
+  }
+
+  .present>h1{
+    font-size: 2.5rem;
+  }
+
+  .social-red{
+    display: flex;
+    flex-direction: column;
+  }
+  .options-red{
+    margin-bottom: 1rem;
   }
   .photo {
     height: auto;
     width: 50%;
+    margin-top: 7rem;
+    margin-left: 3rem;
   }
 
   .my-photo{
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
   }
 }
