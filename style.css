@@ -39,15 +39,6 @@ body {
   z-index: -1;
 
 }
-
-/* entre mas especifico sea el elemento mas va a ser tenido en cuenta  */
-body>.header-cv {
-  /* cambiar la fuente(style de letra) */
-  width: 100%;
-  height: 20%;
-  /* invertigar */
-}
-
 .container-video{
   position: relative;
   overflow: hidden;
@@ -57,28 +48,23 @@ body>.header-cv {
   object-fit: cover;
 }
 
-/* este pesa menos por lo tanto toma las acciones que se indica  donde hay mas peso */
-.header-cv>.container-navbar {
+header {
   width: 100%;
+  height: 20%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.1rem;
-  position: fixed;
-
+  flex-direction: column;
 }
-
-
 
 .navbar {
   position: fixed;
-  width: 100%;
+  width: 98%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: #203b47d5;
-  padding: 15px;
+  padding: 1%;
 }
 
 .navbar a {
@@ -122,6 +108,15 @@ li {
   background-color: #145c7a;
 }
 
+
+.my-content {
+margin-top: 4rem;  /* padding-top: 3%; */
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+
+}
+
 .present,
 .photo {
   width: 50%;
@@ -129,18 +124,10 @@ li {
 }
 
 .present {
-  margin-left: 3%;
-  margin-top: 6%;
+  margin-left: 8rem;
+  margin-top: 8rem;
 }
 
-.my-content {
-  margin: 3%;
-  padding-top: 3%;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 2rem;
-
-}
 
 
 .present>p {
@@ -196,7 +183,7 @@ img.logos {
 
 }
 
-@keyframes aniamtionPhoto {
+@keyframes animationPhoto {
   0% {
     transform: translate(0, 0);
   }
@@ -217,7 +204,7 @@ img.logos {
   position: relative;
   width: 26rem;
   height: 26rem;
-  animation: aniamtionPhoto 2.5s infinite;
+  animation: animationPhoto 2.5s infinite;
   border: 0.3rem solid #c3c9c9;
   border-radius: 50%;
   filter: drop-shadow(0rem 0rem 1.8rem #c3c9c9);
@@ -595,7 +582,7 @@ textarea {
   height: 2rem;
 }
 
-@media (max-width:600px) {
+@media (max-width:480px) {
   .navbar{
     width: auto;
   }
@@ -610,8 +597,9 @@ textarea {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-
   }
+
+
   .navbar label{
     display: inline-flex;
     align-items: center;
@@ -620,5 +608,28 @@ textarea {
 
   #toggler:checked ~ .menu{
     max-height: 100%;
+  }
+
+  .my-content{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;   */
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .present{
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  .photo {
+    height: auto;
+    width: 50%;
+  }
+
+  .my-photo{
+    width: 10rem;
+    height: 10rem;
   }
 }
