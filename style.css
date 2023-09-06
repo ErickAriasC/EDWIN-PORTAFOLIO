@@ -1,6 +1,6 @@
 @font-face {
   font-family: Dream Orphans;
-  src: url(fuente\ principal/);
+  src: url();
 }
 
 
@@ -37,7 +37,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  
+
 }
 
 /* entre mas especifico sea el elemento mas va a ser tenido en cuenta  */
@@ -48,11 +48,18 @@ body>.header-cv {
   /* invertigar */
 }
 
+.container-video{
+  position: relative;
+  overflow: hidden;
+}
+
+.container-video {
+  object-fit: cover;
+}
 
 /* este pesa menos por lo tanto toma las acciones que se indica  donde hay mas peso */
 .header-cv>.container-navbar {
   width: 100%;
-  background-color: #203b47d5;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,22 +68,36 @@ body>.header-cv {
 
 }
 
-.logo,
-.navbar {
-  width: 50%;
-  margin: 1rem;
 
-}
 
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #203b47d5;
+  padding: 15px;
 }
 
-/* .navbar > li{
-/* para quitar los puntos de inicio */
-/* list-style: none; */
-/* } */
+.navbar a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  display: flex;
+  gap: 25px;
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
 
 li {
   /* para quitar los puntos de inicio */
@@ -84,7 +105,7 @@ li {
 }
 
 
-.navbar>li>a {
+.list>li>a {
   /* para evita la linea del subrayado */
   text-decoration: none;
   /* CREACION DE ANCHA PARA NAVEGACION */
@@ -97,7 +118,7 @@ li {
 }
 
 /* cuando pase el mouse por encima del elemento HOVER Y FOCUS  */
-.navbar>li>a:hover {
+.list>li>a:hover {
   background-color: #145c7a;
 }
 
@@ -431,6 +452,7 @@ p {
 
 .cards-services {
   display: flex;
+  justify-content: flex-start;
   margin: 2rem;
 
 }
@@ -571,4 +593,32 @@ textarea {
 .footer>a>img {
   width: 2rem;
   height: 2rem;
+}
+
+@media (max-width:600px) {
+  .navbar{
+    width: auto;
+  }
+
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+  }
+  .navbar label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu{
+    max-height: 100%;
+  }
 }

@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.0.0/remixicon.css">
+
     <link rel="stylesheet" href="style.css">
     <title>PORTAFOLIO</title>
 </head>
 <body>
-    <video id="videoFondo" loop autoplay muted><source src="content/videos/fondo.mp4" type="video/mp4" ></video>
+    <div class="container-video">
+        <video id="videoFondo" loop autoplay muted>
+            <source src="content/videos/fondo.mp4" type="video/mp4" >
+        </video>
+    </div>
     <header class="header-cv" id="header-cv">
-        <div class="container-navbar" id="container-navbar">
+        <nav class="navbar" id="navbar">
             <h2 class="logo" id="logo">PORTAFOLIO</h2>
-            <ul class="navbar" id="navbar">
-                <li><a href="">HOME</a> </li>
-                <li><a href="">ABOUT ME</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">PORTAFOLIO</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="ri-menu-line"></i></label>
+            <div class="menu">
+                <ul class="list" >
+                    <li><a href="#my-content">HOME</a> </li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#projects">PORTAFOLIO</a></li>
+                    <li><a href="#contact-me">CONTACT</a></li>
+                </ul>
+
+            </div>
+        </nav>
 
         <div class="my-content" id="my-content">
             <!-- presentacion y descripcioin -->
@@ -50,7 +60,7 @@
         </div>
     </header>
     <main class="main-home">
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="my-projects">
                 <h2 class="part-1">MY</h2>
                 <h2 class="part-2">PROJECTS</h2>
@@ -76,7 +86,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="my-services">
                 <h2 class="part-1">OUR</h2>
                 <h2 class="part-2">SERVICES</h2>
@@ -96,7 +106,7 @@
                 </div>
             </div> -->
         </section>
-        <section class="contact-me">
+        <section class="contact-me" id="contact-me">
             <div class="contact">
                 <h2 class="part-1">CONTACT</h2>
                 <h2 class="part-2">ME</h2>
@@ -118,7 +128,7 @@
     </main>
     <footer class="footer">  
              <div class="container-footer">
-                 <h2 class="author">Hecho en 2023/ Erick Arias</h2>
+                 <h2 class="author">©Hecho en 2023/ Erick Arias</h2>
              </div>
              <a href="">
                  <img src="content/imagen/iconos/up-arrow.png" alt="">
