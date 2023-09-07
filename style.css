@@ -336,7 +336,11 @@ p {
   flex-direction: column;
 }
 
-
+.projects{
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+}
 .my-projects {
   display: flex;
   justify-content: center;
@@ -487,7 +491,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-top: 8rem;
 }
 
 .contact {
@@ -548,20 +552,22 @@ textarea {
 }
 
 .footer {
-  width: 100%;
+  width: 98%;
   height: 5rem;
   background-color: #203b47d5;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .footer>a {
   text-decoration: none;
   width: 3rem;
+  height: auto;
   border-radius: 6.25rem;
   padding: 0.5rem;
-  font-size: 1.5rem;
   text-align: center;
   background-color: #145c7a;
 }
@@ -744,6 +750,53 @@ textarea {
   .part-2{
     margin: 0;
   }
+
+  .form{
+    margin-top: 1rem;
+  }
+
+  .input-1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .form>div>input, textarea {
+  font-size: 0.8rem;
+  }
+
+  .input-1>input{
+    width: 13rem;
+    height: 1rem;
+
+  }
+
+  textarea {
+    width: 12rem;
+    height: 15rem;
+  }
+
+  .send-message {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .footer h2{
+    font-size: 0.5em;
+  }
+
+  .footer>a {
+    width: 2rem;
+  }
+
+  .footer>a>img {
+    width: 1rem;
+    height: 1rem;
+  }
+
 
 
 }
