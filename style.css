@@ -648,7 +648,7 @@ textarea {
   }
 
   .my-services{
-    margin: 1rem;
+    margin: 3rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -687,6 +687,63 @@ textarea {
     padding: 0.5rem;
   }
 
+
+
+  .my-projects{
+    margin: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .part-2{
+    margin: 0;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .container-card {
+    width: 12rem;
+    height: 20rem;
+    border-radius: 1.8rem;
+  }
+
+  .container-card img{
+    margin: 0.5rem;
+    width: 9rem;
+    height: 6rem;
+    object-fit: contain;
+  }
+
+  .container-card h2{
+    font-size: 1.3rem;
+  }
+  .container-card>p{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .container-card>a{
+    width: 50%;
+    height: auto;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .contact{
+    margin: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .part-2{
+    margin: 0;
+  }
 
 
 }
