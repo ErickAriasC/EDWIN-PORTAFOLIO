@@ -23,7 +23,6 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  /* background-image: url(content/74ac85ec4c2934afef7e6b995d21e8d8.mp4) ; */
   flex-direction: column;
   align-items: center;
 
@@ -111,13 +110,12 @@ li {
 
 .my-content {
   width: 100%;
-  margin-top: 15rem;  /* padding-top: 3%; */
+  height: 30rem;
+  margin-top: 15rem;  
+  margin-bottom: 15rem;  
+
   display: flex;
-  /* justify-content: space-around; */
   font-size: 2rem;
-  object-fit: cover;
-
-
 }
 
 .present,
@@ -126,7 +124,11 @@ li {
 }
 
 .present {
-  padding: 8rem 8rem 0rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 5rem;  
 }
 
 .present>p {
@@ -178,36 +180,7 @@ img.logos {
   background-image: url(content/imagen/redes/github-BLANCO.png);
 }
 
-.photo {
-  /* //agregar el responsive desing a toda la pagina */
-  justify-content: center;
-  margin: 5rem;
-  z-index: -1;
 
-}
-
-.my-photo {
-  width: 24rem;
-  height: 24rem;
-  animation: animationPhoto 2.5s infinite;
-  border: 0.3rem solid #c3c9c9;
-  border-radius: 50%;
-  filter: drop-shadow(0rem 0rem 1.8rem #c3c9c9);
-}
-
-@keyframes animationPhoto {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(0, 1.25rem);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
 
 
 /* ANIMACION BOTON DOWLAND CV  */
@@ -300,11 +273,11 @@ p {
   25% {
     margin-top: -2.5rem;
   }
-
+  
   50% {
     margin-top: -2.5rem;
   }
-
+  
   55% {
     margin-top: -5rem;
   }
@@ -324,6 +297,37 @@ p {
   100% {
     margin-top: 0;
   }
+}
+
+/* PHOTO-PROFILE */
+@keyframes animationPhoto {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(0, 1.25rem);
+  }
+  
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.my-photo {
+  width: 24rem;
+  height: 24rem;
+  animation: animationPhoto 2.5s infinite;
+  border: 0.3rem solid #c3c9c9;
+  border-radius: 50%;
+  filter: drop-shadow(0rem 0rem 1.8rem #c3c9c9);
 }
 
 /* MAIN*/
@@ -346,7 +350,7 @@ main {
 .my-projects {
   display: flex;
   justify-content: center;
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin: 3rem;
 }
 
@@ -424,14 +428,14 @@ main {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 .my-services {
   width: auto;
   display: flex;
   justify-content: center;
-  font-size: 2.7rem;
+  font-size: 3rem;
 }
 
 .part-2 {
@@ -452,7 +456,7 @@ main {
 }
 
 .container-card-services>img {
-  margin: 2rem;
+  margin: 3rem;
   width: 10rem;
   height: 9.4rem;
   border-radius: 0.31rem 0.31rem;
@@ -498,7 +502,7 @@ main {
 
 .contact {
   display: flex;
-  font-size: 2.7rem;
+  font-size: 3rem;
 }
 
 .form {
@@ -553,7 +557,7 @@ textarea {
   transform: scale(0.9);
 }
 
-.footer {
+footer {
   width: 98%;
   height: 5rem;
   background-color: #203b47d5;
