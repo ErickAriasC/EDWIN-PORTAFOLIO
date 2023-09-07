@@ -1,5 +1,6 @@
 //padre de la card
-const section_services= document.querySelector(".services");
+// const section_services= document.querySelector(".services");
+const cardsServices=document.querySelector(".cards-services");
 
 const services= [
   {
@@ -28,6 +29,7 @@ const generateCard=()=>{
 
 const createCardServices = (services) => {
     //CREAR LA CARTA
+
     //contenedor de la carta
     const container_card_services = document.createElement("div");
     //ASIGNACION DE CLASE AL DIV ANTERIOR
@@ -62,7 +64,8 @@ const createCardServices = (services) => {
   container_card_services.appendChild(p);
   container_card_services.appendChild(a);
   
-  section_services.appendChild(container_card_services);
+  cardsServices.appendChild(container_card_services);
+  // section_services.appendChild(cardsServices);
 };
 
 window.addEventListener('DOMContentLoaded', generateCard)

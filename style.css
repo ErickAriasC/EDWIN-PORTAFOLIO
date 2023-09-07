@@ -20,7 +20,7 @@
 body {
   /* vw(view width)el espacio que se ve en la pantalla y debe ser en 100 para 
   que no se salga de la pantalla y me cree la barra horizontal */
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   /* background-image: url(content/74ac85ec4c2934afef7e6b995d21e8d8.mp4) ; */
@@ -150,7 +150,6 @@ li {
 .social-red{
   margin: 1rem;
   display: flex;
-
 }
 
 .options-red{
@@ -183,7 +182,7 @@ img.logos {
 .photo {
   /* //agregar el responsive desing a toda la pagina */
   width: 50%;
-  display: flex;
+  justify-content: center;
   margin: 5rem;
   z-index: -1;
 }
@@ -330,9 +329,10 @@ p {
 
 /* MAIN*/
 
-.main-home {
+main {
   width: 100%;
-  height: auto;  display: flex;
+  height: auto;  
+  display: flex;
   flex-direction: column;
 }
 
@@ -340,6 +340,9 @@ p {
   width: 100%;
   height: auto;
   margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+
 }
 .my-projects {
   display: flex;
@@ -418,6 +421,13 @@ p {
 
 }
 
+.cards-services {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
 .my-services {
   width: auto;
   display: flex;
@@ -425,16 +435,9 @@ p {
   font-size: 2.7rem;
 }
 
-
 .part-2 {
   margin-left: 2rem;
   color: #087ea8;
-}
-
-.cards-services {
-  display: flex;
-  margin: 2rem;
-
 }
 
 .container-card-services {
@@ -634,19 +637,22 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+
   .options-red{
     margin-bottom: 1rem;
   }
+
   .photo {
     height: auto;
     width: 50%;
     margin-top: 7rem;
-    margin-left: 3rem;
+    margin-left: 4.5rem;
   }
 
   .my-photo{
     width: 12rem;
     height: 12rem;
+
   }
 
   .services{
@@ -665,6 +671,11 @@ textarea {
     margin: 0;
   }
 
+  .cards-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
   .container-card-services {
     width: 12rem;
     height: 20rem;
@@ -693,7 +704,9 @@ textarea {
     padding: 0.5rem;
   }
 
-
+  .projects{
+    align-items: center;
+  }
 
   .my-projects{
     margin: 3rem 1rem 1rem 1rem;
