@@ -115,6 +115,8 @@ li {
   display: flex;
   /* justify-content: space-around; */
   font-size: 2rem;
+  object-fit: cover;
+
 
 }
 
@@ -124,11 +126,8 @@ li {
 }
 
 .present {
-  width: 100%;
   padding: 8rem 8rem 0rem 8rem;
 }
-
-
 
 .present>p {
   position: relative;
@@ -181,10 +180,10 @@ img.logos {
 
 .photo {
   /* //agregar el responsive desing a toda la pagina */
-  width: 50%;
   justify-content: center;
   margin: 5rem;
   z-index: -1;
+
 }
 
 .my-photo {
@@ -625,8 +624,7 @@ textarea {
   .present{
     width: 90%;
     padding: 0rem 5% 0rem 5%;
-    /* margin-top: 5rem;
-    margin-left: 2rem; */
+
   }
 
   .present>h1{
@@ -640,13 +638,15 @@ textarea {
 
   .options-red{
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .photo {
     height: auto;
     width: 50%;
     margin-top: 7rem;
-    margin-left: 4.5rem;
+    margin-left: 2.6rem;
   }
 
   .my-photo{
@@ -664,7 +664,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .part-2{
@@ -706,6 +706,8 @@ textarea {
 
   .projects{
     align-items: center;
+    margin-top: 1rem;
+
   }
 
   .my-projects{
@@ -713,7 +715,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .part-2{
@@ -726,14 +728,14 @@ textarea {
   }
   .container-card {
     width: 12rem;
-    height: 20rem;
+    height: 22rem;
     border-radius: 1.8rem;
   }
 
   .container-card img{
     margin: 0.5rem;
     width: 9rem;
-    height: 6rem;
+    height: 5rem;
     object-fit: contain;
   }
 
@@ -752,12 +754,15 @@ textarea {
     padding: 0.5rem;
   }
 
+  .contact-me{
+    margin-top: 5rem;
+  }
   .contact{
-    margin: 3rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .part-2{
@@ -810,6 +815,40 @@ textarea {
     height: 1rem;
   }
 
+}
 
+@media (max-width:765px) {
+
+.my-content{
+  width: 100%;
+  height: auto;
+  /* flex-wrap: wrap-reverse; */
+  margin-top: 6rem;
+  margin-left: 2rem;
+
+}
+
+
+.present{
+  padding: 0%;
+}
+.present>h1{
+  font-size: 2.9rem;
+}
+.photo {
+  height: auto;
+  width: 50%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4rem;
+}
+.my-photo{
+  width: 14rem;
+  height: 14rem;
+
+
+}
 
 }
