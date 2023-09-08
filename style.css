@@ -516,7 +516,6 @@ main {
   text-align: center;
   padding: 1rem;
   color: inherit;
-  margin-bottom: 1rem;
 }
 .container-card-services>a:hover {
   background-color: #c3c9c9;
@@ -692,6 +691,7 @@ footer {
   }
 
   .options-red{
+    margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
@@ -739,7 +739,7 @@ footer {
   }
   .container-card-services {
     width: 12rem;
-    height: 20rem;
+    height: auto;
     border-radius: 1.8rem;
   }
 
@@ -790,7 +790,7 @@ footer {
   }
   .container-card {
     width: 12rem;
-    height: 22rem;
+    height: auto;
     border-radius: 1.8rem;
   }
 
