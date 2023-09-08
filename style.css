@@ -146,6 +146,7 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0.5rem;
+  text-align: center;
 }
 
 .social-red{
@@ -599,8 +600,13 @@ footer {
 }
 
 @media (max-width:480px) {
+
+  body{
+    width: 90%;
+    height: auto;
+  }
   .navbar{
-    width: auto;
+    width: 100%;
   }
 
   .logo{
@@ -630,7 +636,7 @@ footer {
   }
 
   .my-content{
-    width: auto;
+    width: 100%;
     height: auto;
     font-size: 1rem;
     display: flex;
@@ -638,8 +644,13 @@ footer {
     /* align-items: center;   */
     margin: 0rem;
     padding: 0rem;
+    /* background-color: #087ea8; */
   }
   
+  .greeting{
+    margin-top: 3rem;
+  }
+
   .present{
     width: 90%;
     padding: 0rem 5% 0rem 5%;
@@ -660,17 +671,21 @@ footer {
     display: flex;
     justify-content: center;
   }
-
+.dowland-cv{
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
   .photo {
     height: auto;
-    width: 50%;
+    width: 40%;
     margin-top: 7rem;
     margin-left: 2.6rem;
   }
 
   .my-photo{
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
 
   }
 
@@ -779,13 +794,13 @@ footer {
   .contact{
     margin: 0rem 1rem 1rem 1rem;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     font-size: 1.8rem;
   }
 
   .part-2{
-    margin: 0;
+    margin: 1rem;
   }
 
   .form{
