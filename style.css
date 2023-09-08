@@ -142,7 +142,7 @@ li {
   color: #087ea8;
 }
 
-.social-red>div>li {
+.social-red>div>a {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0.5rem;
@@ -155,6 +155,11 @@ li {
 
 .options-red{
   display: flex;
+}
+.options-red>li>{
+  width: auto;
+  height: auto;
+  cursor: pointer;
 }
 
 img.logos {
@@ -185,6 +190,10 @@ img.logos {
 
 /* ANIMACION BOTON DOWLAND CV  */
 .dowland-cv {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  text-align: center;
   margin-left: 1rem;
   cursor: pointer;
   border: none;
@@ -192,11 +201,17 @@ img.logos {
   position: relative;
   display: inline-block;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.4rem;
   border-radius: 31.25rem;
   overflow: hidden;
   background: #c3c9c9;
   color: #087ea8
+}
+
+.dowland-cv-span{
+ display: flex;
+ align-items: center;
+ justify-content:flex-end;
 }
 
 .dowland-cv .dowland-cv-span {
