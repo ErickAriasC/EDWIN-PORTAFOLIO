@@ -624,6 +624,15 @@ footer {
   height: 2rem;
 }
 
+@media (max-width:1279px){
+  .my-content{
+    margin-top: 11rem;
+  }
+  .my-photo{
+    width: 20rem;
+    height: auto;
+  }
+}
 
 @media (max-width:920px){
 .my-content{
