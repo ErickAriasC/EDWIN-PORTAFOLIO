@@ -483,7 +483,7 @@ main {
   width: 10rem;
   height: 9.4rem;
   border-radius: 0.31rem 0.31rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .container-card-services>h2 {
@@ -745,9 +745,9 @@ footer {
 
   .container-card-services img{
     margin: 0.5rem;
-    width: 9rem;
-    height: 6rem;
-    object-fit: contain;
+    max-width:  8rem;
+    max-height: 5rem;
+    /* object-fit: contain; */
   }
 
   .container-card-services h2{
