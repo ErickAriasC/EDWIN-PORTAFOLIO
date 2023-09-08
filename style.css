@@ -602,11 +602,14 @@ footer {
 @media (max-width:480px) {
 
   body{
-    width: 90%;
+    width: 91%;
     height: auto;
+    display: flex;
+    justify-content: center;
   }
+
   .navbar{
-    width: 100%;
+    width: 98%;
   }
 
   .logo{
@@ -690,6 +693,7 @@ footer {
   }
 
   .services{
+    width: 100%;
     margin-top: 3rem;
   }
 
