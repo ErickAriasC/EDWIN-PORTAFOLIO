@@ -6,17 +6,17 @@ const services= [
   {
     id: 1,
     tittle: "DEVELOPER ",
-    description: "The objective here is to obtain a hand of cards whose total value is as close to 21 as possible without going over. if the sum of the cards exceeds 21, the player automatically loses. ",
+    description: "Development of web and mobile applications, committed to quality and creativity, in order to provide optimal solutions to client needs.",
     img: "content/imagen/main/developer.png",
-    url: ""
+    url: "#contact-me"
   },
 
   {
     id: 2,
     tittle:" DESIGNER",
-    description: "The objective here is to obtain a hand of cards whose total value is as close to 21 as possible without going over. if the sum of the cards exceeds 21, the player automatically loses. ",
+    description: "Ideas are transformed into attractive and functional results, creating and innovating user interfaces, websites and mobile applications.",
     img: "content/imagen/main/desing.png",
-    url: ""
+    url: "#contact-me"
   }
 ];
 
@@ -55,7 +55,7 @@ const createCardServices = (services) => {
   // a
   const a = document.createElement("a");
   a.classList.add("services-btn-developer");
-  a.textContent = "See More";
+  a.textContent = "More information";
   a.href=services.url
   
   //ORDEN DE LOS ELEMENTOS

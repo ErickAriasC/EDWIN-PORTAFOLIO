@@ -469,7 +469,15 @@ main {
   align-items: center;
   border-radius: 2.5rem;
   background-color: #203b47d5;
+  transition: 0.4s;
+
 }
+
+.container-card-services:hover {
+  filter: drop-shadow(0rem 0rem 1.87rem #145c7a);
+  transform: scale(1.1);
+}
+
 
 .container-card-services>img {
   margin: 3rem;
@@ -488,16 +496,19 @@ main {
 }
 
 .container-card-services>p {
-  margin: 1rem;
-  width: 100%;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+  width: 90%;
   text-align: center;
   color: #c3c9c9;
   overflow: hidden;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-align: justify;
+
 }
 
 .container-card-services>a {
-  width: 80%;
+  width: 50%;
   font-size: 1.2rem;
   text-decoration: none;
   background-color: #145c7a;
@@ -505,6 +516,12 @@ main {
   text-align: center;
   padding: 1rem;
   color: inherit;
+}
+.container-card-services>a:hover {
+  background-color: #c3c9c9;
+  color: #087ea8;
+  filter: drop-shadow(0rem 0rem 1.87rem #c3c9c9);
+
 }
 
 .contact-me {
